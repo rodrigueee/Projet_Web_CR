@@ -1,0 +1,194 @@
+/**********************************Généralités **********************************************/
+.txtGras{
+    font-weight:bold;
+}
+.txtItalic{
+    font-style:italic;
+}
+.txtBlue{
+    color:#000099;
+}
+.firstLetter:first-letter{
+    color:#DA1C5A;
+}
+
+.txtCouleurPension{
+    color:#DA1C5A;
+}
+
+.petite_taille_texte {
+    font-size:90%;
+}
+
+/******************************************gabarit & généralités ********************************/
+input {
+    /*line-height:2%;*/
+    color:#000;
+}
+.salmon {
+    background:#4f5fb7;
+    font-weight: bold;
+}
+
+#image{
+    background-image:url(../../images/banniere_pc.jpg);
+    background-repeat:no-repeat; /* image s'affiche une seule fois */
+    width:100%;
+}
+
+header img {
+    width:72%;	
+}
+
+#page {
+    margin:0 auto; 
+    width:90%;
+    max-width:550px; /* taille du header */
+    min-width:460px;
+}
+
+.hauteur_menu_xs {
+    max-height: 40px;
+}
+
+.img_header {
+    background-image:url(../../images/banniere_pc.jpg) ;
+    display:block;
+    height:20px;
+    width:100px;
+    background-repeat:no-repeat;
+}
+
+ul {
+    padding-left:0%;
+}
+
+#menu ul {
+    padding-left:20%;
+}
+
+#menu li {
+    list-style-type:none;
+    text-align:left;
+}
+
+.bottomLine {
+    border-bottom-style:solid;
+    border-bottom-color:#CCC;
+    border-bottom-width:0.07em;
+}
+nav {
+
+}
+
+#menu a {
+    text-decoration:none; 
+}
+#menu a:hover{
+    color:white;
+    background-color:blue;	
+}
+.txtGras {
+    font-weight:bold;
+}
+footer {
+    clear:both; 
+    color:#333;
+    width:80%;
+    margin:0 auto; 
+    text-align:center;
+    padding-right:15px;
+}	
+#label {
+    text-align:center;
+    padding-right:3%;
+}
+#contenu { 
+    float :left; 
+    margin-top:5%; 
+    margin-left:2%;
+    width:75%;
+
+}	
+#main,p_menu {
+    padding-left:1%;
+    padding-right:1%;
+    width:100%;
+    display:inline-block;
+    font-size:100%;    
+}
+
+.taille_logo {
+    height: 70px;
+    width: 70px;
+}
+
+.presentation_accueil{
+    line-height:30px;
+    font-size:140%;
+}
+
+#submit_res input{
+    line-height: 50px;
+}
+#titre{
+    text-align: center;
+}
+
+#menu-demo2, #menu-demo2 ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+}
+#menu-demo2 li{
+display:inline-block;
+position:relative;
+
+}
+#menu-demo2 ul li{
+display:inherit;
+
+}
+
+#menu-demo2 ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+}
+#menu-demo2 li:hover ul{
+max-height:15em;
+}
+
+
+/* background des liens sous menus */
+
+#menu-demo2 li:nth-child(2) li{
+background:#007bff;
+}
+
+
+/* les a href */
+#menu-demo2 a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#fff;
+font-family:arial;
+}
+#menu-demo2 ul a{
+padding:8px 0;
+}
+#menu-demo2 li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#menu-demo2 li:hover a, #menu-demo2 li li:hover a{
+color:#000;
+}
