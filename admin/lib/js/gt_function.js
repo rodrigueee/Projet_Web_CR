@@ -1,6 +1,6 @@
 $(document).ready(function(){    
     $("#carousel_gt").carousel({
-         interval : 10,
+         interval : 50,
          pause: false
          
      });

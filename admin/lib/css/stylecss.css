@@ -172,6 +172,9 @@ max-height:15em;
 #menu-demo2 li:nth-child(2) li{
 background:#007bff;
 }
+#menu-demo2 li:nth-child(5) li{
+background:#007bff;
+}
 
 
 /* les a href */
@@ -192,3 +195,30 @@ text-transform:inherit;
 #menu-demo2 li:hover a, #menu-demo2 li li:hover a{
 color:#000;
 }
+
+.centrer {
+     text-align: center;
+}
+
+body {
+ 
+    background: #6495ED;
+
+}
+
+
+#cadre3{
+    border-width:1px;
+    border-style:groove;
+    border-color:black;
+    font-size : 1px; 
+    color: white; 
+    text-align : center; 
+    border-color:black;
+    background-color :#333; 
+    font-weight: bolder; 
+    width: 530px;
+
+}
+
+

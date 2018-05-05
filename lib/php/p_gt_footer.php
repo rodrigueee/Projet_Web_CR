@@ -1,5 +1,5 @@
 <div class="centrer clear"> 
       
-    Editeur responsable admin@gametrade.com - All right reserved
+    Editeur responsable admin@sportheroes.com - All right reserved
     
 </div>  
