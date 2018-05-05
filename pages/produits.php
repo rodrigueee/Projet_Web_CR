@@ -45,7 +45,7 @@ for ($i = 0; $i < $nbrProduits; $i++) {
                         </a>
                     <?php
                     } else {
-                        print " Vous devez être connecté pour commander";
+                        print " Vous devez être connecté pour commander !";
                     }
                     ?></td>
             </tr>
