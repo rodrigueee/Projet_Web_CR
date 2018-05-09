@@ -1,8 +1,8 @@
 
-<?php/*
+<?php
 $info = new ProduitsDB($cnx);
 $liste_produits = $info->getListeProduitstennis();
-$nbrProduits = count($liste_Produits);*/
+$nbrProduits = count($liste_produits);
 ?>
 
 
@@ -24,9 +24,9 @@ for ($i = 0; $i < $nbrProduits; $i++) {
         </thead>
         <tbody>
             <tr>
-                <th scope="row"><img src="./admin/images/<?php print $liste_produits[$i]['image'] ?>" alt="Produits"/></th>
+                <th scope="row"><img src="./admin/images/<?php print $liste_produits[$i]['photo'] ?>" alt="Produits"/></th>
                 <td> <?php
-                    print utf8_decode($liste_produits[$i]['sport']);
+                    print utf8_decode($liste_produits[$i]['nomproduit']);
                     ?></td>
                 <td>  <?php
                     print utf8_decode($liste_produits[$i]['marque']);
@@ -40,7 +40,7 @@ for ($i = 0; $i < $nbrProduits; $i++) {
                 <td>  <?php
                     if (isset($_SESSION['client'])) {
                         ?>
-                        <a href="index.php?page=commande&id=<?php print $liste_produits[$i]['Idproduits']; ?>">
+                        <a href="index.php?page=commande&id=<?php print $liste_produits[$i]['idproduits']; ?>">
                             Ajouter au panier 
                         </a>
                     <?php

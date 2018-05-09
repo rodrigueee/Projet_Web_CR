@@ -4,10 +4,10 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<?php /*
-  require 'lib/php/adm_list_include.php';
+<?php 
+  require 'lib/php/adm_liste_include.php';
   $cnx = Connexion::getInstance($dsn, $user, $pass);
-  session_start(); */
+  session_start(); 
 ?>
 <html>
     <head>

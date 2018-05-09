@@ -1,13 +1,13 @@
 <?php
 if(isset($_GET['submit_login'])){
     
-    //var_dump($_GET);
+  
     //pour pouvoir utiliser les donnes hors du tab $_get
     extract($_GET,EXTR_OVERWRITE);
     $log= new AdminDB($cnx);
-    //var_dump($log); 
+
     $admin=$log->getAdmin($admin, $password);
-    //var_dump($admin);
+
     if(is_null($admin)){
         print "<br/>Données incorrectes";
     }

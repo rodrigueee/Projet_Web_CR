@@ -9,7 +9,7 @@ class ProduitsDB extends Produits {
         $this->_db = $db;
     }
 
-    public function getListeJeux() {
+    public function getListeProduits() {
         try {
             $query = "select * from produits order by prix asc";
             $resultset = $this->_db->prepare($query);
@@ -31,7 +31,7 @@ class ProduitsDB extends Produits {
 
     public function getListeProduitsfoot() {
         try {
-            $query = "select * from produits where nom = 'football'";
+            $query = "select * from produits where nomproduit = 'FOOTBALL'";
             $resultset = $this->_db->prepare($query);
             $resultset->execute();
 
@@ -50,7 +50,7 @@ class ProduitsDB extends Produits {
 
     public function getListeProduitscycli() {
         try {
-            $query = "select * from produits where nom = 'cycliste'";
+            $query = "select * from produits where nomproduit = 'CYCLISTE'";
             $resultset = $this->_db->prepare($query);
             $resultset->execute();
 
@@ -69,7 +69,7 @@ class ProduitsDB extends Produits {
 
     public function getListeProduitstennis() {
         try {
-            $query = "select * from produits where nom = 'tennis'";
+            $query = "select * from produits where nomproduit = 'TENNIS'";
             $resultset = $this->_db->prepare($query);
             $resultset->execute();
 
@@ -88,7 +88,7 @@ class ProduitsDB extends Produits {
 
      function getProduits($id) {
         try {
-            $query = "SELECT * FROM Produits where Idproduit=:idproduit";
+            $query = "SELECT * FROM produits where idproduit=:idproduit";
             $resultset = $this->_db->prepare($query);
             $resultset->bindValue(':idproduit', $id);
             $resultset->execute();
