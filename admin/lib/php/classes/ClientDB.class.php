@@ -11,34 +11,38 @@ class ClientDB extends Client {
 
     public function addClient(array $data) {
 
-        $query = "insert into client (nom,prenom,mdp,mail) values (:nom,:prenom,:mdp,:mail)";
+        $query = "insert into clients (nom,prenom,login,motdepasse,adresse,codepostal,localite,gsm,email) values (:nom,:prenom,:login,:motdepasse,:adresse,:codepostal,:localite,:gsm,:email)";
 
         try {
             $resultset = $this->_db->prepare($query);
             $resultset->bindValue(':nom', $data['nom'], PDO::PARAM_STR);
             $resultset->bindValue(':prenom', $data['prenom'], PDO::PARAM_STR);
-            $resultset->bindValue(':mdp', $data['mdp'], PDO::PARAM_STR);
-            $resultset->bindValue(':mail', $data['mail'], PDO::PARAM_STR);
+            $resultset->bindValue(':login', $data['login'], PDO::PARAM_STR);
+            $resultset->bindValue(':motdepasse', $data['motdepasse'], PDO::PARAM_STR);
+            $resultset->bindValue(':adresse', $data['adresse'], PDO::PARAM_STR);
+            $resultset->bindValue(':codepostal', $data['codepostal'], PDO::PARAM_STR);
+            $resultset->bindValue(':localite', $data['localite'], PDO::PARAM_STR);
+            $resultset->bindValue(':gsm', $data['gsm'], PDO::PARAM_STR);
+            $resultset->bindValue(':email', $data['email'], PDO::PARAM_STR);
             $resultset->execute();
-
         } catch (PDOException $e) {
             print "Données non encodées";
             print $e->getMessage();
         }
     }
-    
-    function isClient($mail, $mdp) {
+
+    function isClient($login,$motdepasse) {
         try {
-            $query = "select * from client where mail = :mail and mdp = :mdp";
+            $query = "select * from clients where motdepasse = :motdepasse and login = :login";
             $resultset = $this->_db->prepare($query);
-            $resultset->bindValue(':mail', $mail);
-            $resultset->bindValue(':mdp', $mdp);
+            $resultset->bindValue(':motdepasse', $motdepasse);
+            $resultset->bindValue(':login', $login);
             $resultset->execute();
             $data = $resultset->fetch();
             if (!empty($data)) {
                 try {
                     $_client[] = new Client($data);
-                    if ($_client[0]->mail == $mail && $_client[0]->mdp ==$mdp ) {
+                    if ($_client[0]->motdepasse == $motdepasse && $_client[0]->login == $login) {
                         return $_client;
                     } else {
                         return null;
@@ -51,15 +55,15 @@ class ClientDB extends Client {
             print "Requete échouée" . $e->getMessage();
         }
     }
-    
+
     function getClient($id_client) {
         try {
-            $query = "select * from client where Idclient = :Idclient";
+            $query = "select * from client where idclient = :idclient";
             $resultset = $this->_db->prepare($query);
-            $resultset->bindValue(':Idclient', $id_client);
+            $resultset->bindValue(':idclient', $id_client);
             $resultset->execute();
             $data = $resultset->fetchAll();
-//var_dump($data);
+
             $resultset->execute();
         } catch (PDOException $e) {
             print $e->getMessage();

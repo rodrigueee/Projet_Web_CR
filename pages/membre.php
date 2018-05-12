@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['envoyer2'])) {
     $log = new ClientDB($cnx);
-    $client = $log->isClient($_POST['email3'], $_POST['mdp3']);
+    $client = $log->isClient($_POST['login'], $_POST['motdepasse']);
 
     if (is_null($client)) {
         
@@ -29,12 +29,12 @@ if (isset($_POST['envoyer2'])) {
                 <div class="main-login-form">
                     <div class="login-group">
                         <div class="form-group">
-                            <label for="email3" class="sr-only">Email</label>
-                            <input type="email" class="form-control" id="email3" name="email3" placeholder="username">
+                            <label for="login2" class="sr-only">Login</label>
+                            <input type="login" class="form-control" id="login2" name="login" placeholder="username">
                         </div>
                         <div class="form-group">
-                            <label for="mdp3" class="sr-only">Mot de passe</label>
-                            <input type="password" class="form-control" id="mdp3" name="mdp3" placeholder="password">
+                            <label for="motdepasse3" class="sr-only">Mot de passe</label>
+                            <input type="password" class="form-control" id="motdepasse3" name="motdepasse" placeholder="password">
                         </div>
                         <div class="form-group login-group-checkbox">
                             <input type="checkbox" id="lg_remember" name="lg_remember">

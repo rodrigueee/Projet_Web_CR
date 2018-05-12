@@ -47,6 +47,7 @@ if (isset($_SESSION['mon_client'])) {
                     <hr>
                     <center>
                     <p class="text-left"><strong> Mon adresse email : </strong><?php print utf8_decode($cli_co[0]['mail']); ?>
+                        </br><strong> Mon numéro de téléphone : </strong><?php print uft8_decode($cli_co[0]['gsm']); ?>
                     </p>
                     <br>
                     </center>

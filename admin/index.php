@@ -5,7 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php 
-  require 'lib/php/adm_liste_include.php';
+  require 'lib/php/adm_list_include.php';
   $cnx = Connexion::getInstance($dsn, $user, $pass);
   session_start(); 
 ?>

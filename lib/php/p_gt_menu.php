@@ -21,10 +21,10 @@ if (isset($_SESSION['client'])) {
                     <a class="nav-link " href="./index.php?page=contact">Contact</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link " href="#">Profil</a>
+                    <a class="nav-link " href="./index.php?page=connexion">Profil</a>
                     <ul>
                         <li><a href="#">Mon profil</a></li>
-                        <li><a href="#">Deconnexion</a></li>                    
+                        <li><a href="./admin/pages/disconnect.php">Deconnexion</a></li>                    
                     </ul>
                 </li>
             </ul>

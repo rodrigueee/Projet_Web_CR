@@ -6,25 +6,25 @@ if (isset($_SESSION['admin'])) {
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="menu-demo2">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./index.php?page=accueil">Accueil</a>             
+                    <a class="nav-link" href="./index.php?page=accueil_admin">Accueil</a>             
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="./index.php?page=produits">Produits</a>
+                    <a class="nav-link" href="../index.php?page=produits">Produits</a>
                     <ul>
-                        <li><a href="./index.php?page=produitsfoot">Football</a></li>
-                        <li><a href="./index.php?page=produitstennis">Tennis</a></li>
-                        <li><a href="./index.php?page=produitscyli">Cycliste</a></li>
+                        <li><a href="../index.php?page=produitsfoot">Football</a></li>
+                        <li><a href="../index.php?page=produitstennis">Tennis</a></li>
+                        <li><a href="../index.php?page=produitscyli">Cycliste</a></li>
                         <li><a href="#">...</a></li>
                     </ul>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link " href="./index.php?page=contact">Contact</a>
+                    <a class="nav-link " href="../index.php?page=contact">Contact</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link " href="#">Profil</a>
                     <ul>
-                        <li><a href="#">Mon profil</a></li>
-                        <li><a href="#">Deconnexion</a></li>                    
+                        <li><a href="../index.php?page=connexion">Mon profil</a></li>
+                        <li><a href="./pages/disconnect.php">Deconnexion</a></li>                    
                     </ul>
                 </li>
             </ul>

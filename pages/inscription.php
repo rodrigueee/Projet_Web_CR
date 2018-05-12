@@ -1,9 +1,9 @@
-<?php
+ <?php
 if (isset($_GET['envoyer'])) {
     extract($_GET, EXTR_OVERWRITE);
 
     $client = new ClientDB($cnx);
-    
+
     $client->addClient($_GET);
     ?>
     <meta http-equiv = "refresh": content = "1;url=index.php?page=accueil">
@@ -33,19 +33,42 @@ if (isset($_GET['envoyer'])) {
                         </div>
 
                         <div class="form-group">
-                            <label for="mdp" class="sr-only">Mot de passe</label>
-                            <input type="password" id="mdp" class="form-control" name="mdp" placeholder="Mot de passe">
+                            <label for="reg_username" class="sr-only">Login</label>
+                            <input type="text" class="form-control" id="login" name="login" placeholder="Login">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="motdepasse" class="sr-only">Mot de passe</label>
+                            <input type="password" id="motdepasse" class="form-control" name="motdepasse" placeholder="Mot de passe">
                         </div>
                         <div class="form-group">
-                            <label for="mdp2" class="sr-only">Confirmez le mot de passe</label>
-                            <input type="password" id="mdp2" class="form-control" name="mdp2" placeholder="Confirmez le mot de passe">
+                            <label for="motdepasse2" class="sr-only">Confirmez le mot de passe</label>
+                            <input type="password" id="motdepasse2" class="form-control" name="motdepasse2" placeholder="Confirmez le mot de passe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="adresse" class="sr-only">Adresse</label>
+                            <input type="text" class="form-control" id="adresse" name="adresse" placeholder="Adresse">
                         </div>
                         <div class="form-group">
-                            <label for="reg_username" class="sr-only">Adresse e-mail</label>
-                            <input type="email" id="mail" class="form-control" name="mail" placeholder="Adresse email">
+                            <label for="codepostal" class="sr-only">Code Postal</label>
+                            <input type="text" class="form-control" id="codepostal" name="codepostal" placeholder="Code Postal">
                         </div>
                         <div class="form-group">
-                            <label for="reg_email" class="sr-only">Confirmez l'email</label>
+                            <label for="localite" class="sr-only">Localité</label>
+                            <input type="text" class="form-control" id="localite" name="localite" placeholder="Localité">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gsm" class="sr-only">GSM</label>
+                            <input type="text" class="form-control" id="gsm" name="gsm" placeholder="GSM">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Adresse e-mail</label>
+                            <input type="email" id="email" class="form-control" name="email" placeholder="Adresse email">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Confirmez l'email</label>
                             <input type="email" id="email2" class="form-control" name="email2" placeholder="Confirmez l'email">
                         </div>
 
