@@ -24,7 +24,7 @@ if (isset($_SESSION['admin'])) {
                     <a class="nav-link " href="#">Profil</a>
                     <ul>
                         <li><a href="../index.php?page=connexion">Mon profil</a></li>
-                        <li><a href="./pages/disconnect.php">Deconnexion</a></li>                    
+                        <li><a href="../admin/pages/disconnect.php">Deconnexion</a></li>                    
                     </ul>
                 </li>
             </ul>

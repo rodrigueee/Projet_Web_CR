@@ -40,7 +40,7 @@ for ($i = 0; $i < $nbrProduits; $i++) {
                 <td>  <?php
                     if (isset($_SESSION['client'])) {
                         ?>
-                        <a href="index.php?page=commande&id=<?php print $liste_produits[$i]['idproduits']; ?>">
+                        <a href="index.php?page=commande&id=<?php print $liste_produits[$i]['idproduit']; ?>">
                             Ajouter au panier 
                         </a>
                     <?php

@@ -46,8 +46,8 @@ and open the template in the editor.
         <div class="container">
             <nav>
                 <?php
-                if (file_exists('./admin/lib/php/ad_menu.php')) {
-                    include ('.admin/lib/php/ad_menu.php');
+                if (file_exists('./lib/php/a_menu.php')) {
+                    include ('./lib/php/a_menu.php');
                 }
                 ?>
             </nav>
@@ -80,8 +80,8 @@ and open the template in the editor.
 
         </div>
         <?php
-        if (file_exists('.admin//lib/php/p_gt_footer.php')) {
-            include ('.admin//lib/php/p_gt_footer.php');
+        if (file_exists('./lib/php/p_gt_footer.php')) {
+            include ('./lib/php/p_gt_footer.php');
         }
         ?>  
     </body>

@@ -2,6 +2,21 @@
 .txtGras{
     font-weight:bold;
 }
+.taille{
+    font-size: 30px;
+    font-weight:bold;
+}
+.taille2{
+    font-size: 15px;
+    font-weight:bold;
+}
+.taille3{
+    font-size: 19px;
+    font-weight:bold;
+}
+#Gras{
+    font-weight:bold;
+}
 .txtItalic{
     font-style:italic;
 }
@@ -102,6 +117,7 @@ footer {
 #label {
     text-align:center;
     padding-right:3%;
+    font-weight:bold;
 }
 #contenu { 
     float :left; 
@@ -136,73 +152,76 @@ footer {
 }
 
 #menu-demo2, #menu-demo2 ul{
-padding:0;
-margin:0;
-list-style:none;
-text-align:center;
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
 }
 #menu-demo2 li{
-display:inline-block;
-position:relative;
+    display:inline-block;
+    position:relative;
 
 }
 #menu-demo2 ul li{
-display:inherit;
+    display:inherit;
 
 }
 
 #menu-demo2 ul{
-position:absolute;
-z-index: 1000;
-max-height:0;
-left: 0;
-right: 0;
-overflow:hidden;
--moz-transition: .8s all .3s;
--webkit-transition: .8s all .3s;
-transition: .8s all .3s;
+    position:absolute;
+    z-index: 1000;
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
 }
 #menu-demo2 li:hover ul{
-max-height:15em;
+    max-height:15em;
 }
 
 
 /* background des liens sous menus */
 
 #menu-demo2 li:nth-child(2) li{
-background:#007bff;
+    background:#007bff;
+}
+#menu-demo2 li:nth-child(4) li{
+    background:#007bff;
 }
 #menu-demo2 li:nth-child(5) li{
-background:#007bff;
+    background:#007bff;
 }
 
 
 /* les a href */
 #menu-demo2 a{
-text-decoration:none;
-display:block;
-padding:8px 32px;
-color:#fff;
-font-family:arial;
+    text-decoration:none;
+    display:block;
+    padding:8px 32px;
+    color:#fff;
+    font-family:arial;
 }
 #menu-demo2 ul a{
-padding:8px 0;
+    padding:8px 0;
 }
 #menu-demo2 li:hover li a{
-color:#fff;
-text-transform:inherit;
+    color:#fff;
+    text-transform:inherit;
 }
 #menu-demo2 li:hover a, #menu-demo2 li li:hover a{
-color:#000;
+    color:#000;
 }
 
 .centrer {
-     text-align: center;
+    text-align: center;
 }
 
 body {
- 
-    background: #6495ED;
+
+    background-image: url(../../images/fond.jpg);
 
 }
 
@@ -219,6 +238,19 @@ body {
     font-weight: bolder; 
     width: 530px;
 
+}
+
+.formt {
+    background-color:#FAFAFA;
+    margin:40px 70px;
+    padding: 28px;
+
+
+}
+.textac{
+    margin:20px 40px;
+    padding: 14px;
+    color: black; text-shadow: white 0.1em 0.1em 0.2em
 }
 
 

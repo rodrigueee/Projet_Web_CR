@@ -13,7 +13,7 @@ if (isset($_SESSION['client'])) {
                     <ul>
                         <li><a href="./index.php?page=produitsfoot">Football</a></li>
                         <li><a href="./index.php?page=produitstennis">Tennis</a></li>
-                        <li><a href="./index.php?page=produitscyli">Cycliste</a></li>
+                        <li><a href="./index.php?page=produitscycli">Cycliste</a></li>
                         <li><a href="#">...</a></li>
                     </ul>
                 </li>
@@ -21,7 +21,7 @@ if (isset($_SESSION['client'])) {
                     <a class="nav-link " href="./index.php?page=contact">Contact</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link " href="./index.php?page=connexion">Profil</a>
+                    <a class="nav-link " href="#">Profil</a>
                     <ul>
                         <li><a href="#">Mon profil</a></li>
                         <li><a href="./admin/pages/disconnect.php">Deconnexion</a></li>                    
@@ -59,7 +59,7 @@ if (isset($_SESSION['client'])) {
                 <a class="nav-link " href="./index.php?page=inscription">Inscription</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link " href="./index.php?page=connexion">Connexion</a>
+                <a class="nav-link " href="#">Connexion</a>
                 <ul>
                     <li><a href="./admin/index.php">Administration</a></li>
                     <li><a href="./index.php?page=membre">Membre</a></li>
