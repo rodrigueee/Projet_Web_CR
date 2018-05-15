@@ -10,9 +10,9 @@ if (isset($_POST['envoyer2'])) {
 
         $_SESSION['mon_client'] = $client[0]->id_client;
         ?>
-        <meta http-equiv = "refresh": content = "0;url=index.php?page=connexion">
+        <meta http-equiv = "refresh": content = "0;url=index.php?page=accueil">
         <?php
-        $ok = "Félicitations votre inscription a été cloturée avec succès ";
+        
     }
 }
 ?>

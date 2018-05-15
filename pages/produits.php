@@ -11,7 +11,7 @@ for ($i = 0; $i < $nbrProduits; $i++) {
     ?>
 
     </br></br>
-    <table class="table table-hover table-dark">
+    <table class="table table-bordered table-dark">
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -43,7 +43,7 @@ for ($i = 0; $i < $nbrProduits; $i++) {
                         <a href="index.php?page=commande&id=<?php print $liste_produits[$i]['idproduit']; ?>">
                             Ajouter au panier 
                         </a>
-                    <?php
+                        <?php
                     } else {
                         print " Vous devez être connecté pour commander !";
                     }
@@ -57,4 +57,3 @@ for ($i = 0; $i < $nbrProduits; $i++) {
 }
 ?>
 
-</div>  

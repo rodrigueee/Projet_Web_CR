@@ -86,28 +86,6 @@ class ProduitsDB extends Produits {
         }
     }
 
-     function getProduits($id) {
-        try {
-            $query = "SELECT * FROM produits where idproduit=:idproduit";
-            $resultset = $this->_db->prepare($query);
-            $resultset->bindValue(':idproduit', $id);
-            $resultset->execute();
-            $data = $resultset->fetchAll();
-//var_dump($data);
-            $resultset->execute();
-        } catch (PDOException $e) {
-            print $e->getMessage();
-        }
-
-        while ($data = $resultset->fetch()) {
-            try {
-                $_array[] = $data;
-            } catch (PDOException $e) {
-                print $e->getMessage();
-            }
-        }
-        return $_array;
-    }
 
 
 }

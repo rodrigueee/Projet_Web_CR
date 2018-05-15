@@ -11,7 +11,7 @@ for ($i = 0; $i < $nbrProduits; $i++) {
     ?>
 
     </br></br>
-    <table class="table table-hover table-dark">
+    <table class="table table-bordered table-dark">
         <thead>
             <tr>
                 <th scope="col">#</th>
