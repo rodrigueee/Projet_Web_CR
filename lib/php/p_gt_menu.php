@@ -23,7 +23,7 @@ if (isset($_SESSION['client'])) {
                 <li class="nav-item active">
                     <a class="nav-link " href="#">Profil</a>
                     <ul>
-                        <li><a href="#">Mon profil</a></li>
+                        <li><a href="./index.php?page=connexion">Mon profil</a></li>
                         <li><a href="./admin/pages/disconnect.php">Deconnexion</a></li>                    
                     </ul>
                 </li>
