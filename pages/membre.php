@@ -8,7 +8,7 @@ if (isset($_POST['envoyer2'])) {
     } else {
         $_SESSION['client'] = 1;
 
-        $_SESSION['mon_client'] = $client[0]->id_client;
+        $_SESSION['mon_client'] = $client[0]->idclient;
         ?>
         <meta http-equiv = "refresh": content = "0;url=index.php?page=accueil">
         <?php
@@ -23,7 +23,7 @@ if (isset($_POST['envoyer2'])) {
     <div class="logo">Se connecter</div>
     <!-- Main Form -->
     <div class="login-form-1">
-        <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="post" id="form_connexion">
+        <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="post" id="formulaire_connexion">
             <form id="login-form" class="text-left">
                 <div class="login-form-main-message"></div>
                 <div class="main-login-form">
@@ -42,7 +42,7 @@ if (isset($_POST['envoyer2'])) {
                         </div>
                     </div>
                     <button type="submit" class="login-button" name="envoyer2" id="envoyer2" value="Connexion"><i class="fa fa-chevron-right"></i></button>
-                      <!--- <input type="submit" button type="button" name="envoyer2" id="envoyer2" value="Connexion" class="btn btn-info">&nbsp; --->
+                 
                 </div>
                 <div class="etc-login-form">
                     <p>new user? <a href="./index.php?page=inscription">S'inscrire</a></p>

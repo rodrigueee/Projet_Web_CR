@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#carousel_gt").carousel({
-        interval: 50,
-        pause: false
+        interval: 25000,
+        pause: true
 
     });
     $("#envoyer").click(function () {

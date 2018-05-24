@@ -58,7 +58,7 @@ class ClientDB extends Client {
 
     function getClient($id_client) {
         try {
-            $query = "select * from client where idclient = :idclient";
+            $query = "select * from clients where idclient = :idclient";
             $resultset = $this->_db->prepare($query);
             $resultset->bindValue(':idclient', $id_client);
             $resultset->execute();

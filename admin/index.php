@@ -14,7 +14,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title> sport admin</title>
         <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-4.0.0/dist/css/bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href="lib/css/mycss.css" />
+        <link rel="stylesheet" type="text/css" href="lib/css/stylecss.css" />
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="admin/lib/js/jquery-3.2.1.js"></script>

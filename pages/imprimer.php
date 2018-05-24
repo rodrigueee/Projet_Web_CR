@@ -30,7 +30,7 @@ for ($i = 0; $i < $nbrJeux; $i++) {
     $pdf->Cell(5, 3.5, utf8_decode($liste_jeux[$i]['nomproduit']), 1, 0, 'L');
     $pdf->SetXY($x + 8.5, $y++);
     $y += 2;
-    $pdf->Cell(5, 3.5, utf8_decode($liste_jeux[$i]['image']), 1, 0, 'L');
+    $pdf->Cell(5, 3.5, utf8_decode($liste_jeux[$i]['photo']), 1, 0, 'L');
 }
 
 $pdf->Output();
